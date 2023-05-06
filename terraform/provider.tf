@@ -1,10 +1,10 @@
 variable "my_access_key" {
-  description = "Access-key-for-AWS"
+  description = "Access-key-for-aws"
   default = "no_access_key_value_found"
 }
  
 variable "my_secret_key" {
-  description = "Secret-key-for-AWS"
+  description = "Secret-key-for-aws"
   default = "no_secret_key_value_found"
 }
 
@@ -18,7 +18,7 @@ terraform {
 }
 
 provider "aws" {
-    regin = local.aws.region
+    region = local.aws.region
     access_key = var.my_access_key
     secret_key = var.my_secret_key
 }

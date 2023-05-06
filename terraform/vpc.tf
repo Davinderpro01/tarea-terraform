@@ -4,7 +4,7 @@ resource "aws_vpc" "this" {
 
   tags = {
     Name = "${local.prefix}-vpc"
-    Environment = Local.env
+    Environment = local.env
     Path = "${basename(abspath(path.module))}/vpc.tf"
   }
 }
